@@ -10,6 +10,7 @@ $(function() {
 	var tag = "graffiti";
 	var url = "https://api.instagram.com/v1/tags" + tag + "media/recent?callback=?&amp;client_id=9a4423b4dfdd4111a73d4bd39082f519&amp;min_id=10"; */
 	$.getJSON(url, screenOutput);
+	
 });
 
 // alert("getJSON");
@@ -17,6 +18,7 @@ $(function() {
 var screenOutput = function(info) {
 	
 	alert("screenOutput");
+	//console.log(data);
 	console.log(info);
 	
 	$("#data-msg").html("<h2>Instagram Results:</h2>");
@@ -26,3 +28,5 @@ var screenOutput = function(info) {
 		$("#data-output").append(pic);
 	}); // end each
 }; // end screenOutput
+
+alert("30");
