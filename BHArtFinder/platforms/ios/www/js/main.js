@@ -5,10 +5,9 @@
 // Instagram API
 $(function() {
 	// var tag = "bhgraffiti";
-	var url = "https://api.instagram.com/v1/media/popular?client_id=9a4423b4dfdd4111a73d4bd39082f519";
-	/*
+	// var url = "https://api.instagram.com/v1/media/popular?callback=?&amp;client_id=9a4423b4dfdd4111a73d4bd39082f519";
 	var tag = "graffiti";
-	var url = "https://api.instagram.com/v1/tags" + tag + "media/recent?callback=?&amp;client_id=9a4423b4dfdd4111a73d4bd39082f519&amp;min_id=10"; */
+	var url = "https://api.instagram.com/v1/tags/" + tag + "/media/recent?callback=?&amp;client_id=9a4423b4dfdd4111a73d4bd39082f519&amp;min_id=10";
 	$.getJSON(url, screenOutput);
 	
 });
