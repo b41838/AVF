@@ -6,7 +6,7 @@
 $(function() {
 	// var tag = "bhgraffiti";
 	var tag = "graffiti";
-	var url = "https://api.instagram.com/v1/tags/" + tag + "/media/recent?callback=?&amp;client_id=9a4423b4dfdd4111a73d4bd39082f519&amp;count=10";
+	var url = "https://api.instagram.com/v1/tags/" + tag + "/media/recent?callback=?&amp;client_id=9a4423b4dfdd4111a73d4bd39082f519&amp;count=12";
 	$.getJSON(url, screenOutput);
 	
 });
@@ -22,7 +22,7 @@ var screenOutput = function(info) {
 	$("#data-msg").html("<h2>Instagram Results:</h2>");
 	
 	$.each(info.data, function(index, photo) {  // index is position in array of info.data
-		var pic = "<li><img src='" + photo.images.standard_resolution.url + "' alt='" + photo.user.id + "' /><h4>" + photo.user.full_name + 			", <em>(" + photo.user.name +")</em></h4></li>";
+		var pic = "<li><img src='" + photo.images.thumbnail.url + "' alt='" + photo.user.id + "' /><h4>" + photo.user.full_name + 			", <em>(" + photo.user.name +")</em></h4></li>";
 		$("#data-output").append(pic);
 	}); // end each
 	
