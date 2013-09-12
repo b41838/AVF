@@ -3,7 +3,7 @@
 // AFV 1309
 
 $('#instagramFeed').on('pageinit', function() {
-	
+
 	alert("Hello from the Instagram Feed!");
 	
 	// Instagram API
@@ -40,10 +40,10 @@ $('#twitterFeed').on('pageinit', function() {
     
 	alert("Hello from the twitter feed!");
 	
-//    $('.twitter_feed').getmytweets({
-//        twitter_hashtag: 'graffiti', /* twitter hashtag.. without the # */
-//        twitter_wrap: 'tweet', /* wrap each tweet with a class */
-//        twitter_limit: 10 /* how many tweets to return */
-//    });
+    $('.twitter_feed').getmytweets({
+        twitter_hashtag: 'graffiti', /* twitter hashtag.. without the # */
+        twitter_wrap: 'tweet', /* wrap each tweet with a class */
+        twitter_limit: 10 /* how many tweets to return */
+    });
     
 });
