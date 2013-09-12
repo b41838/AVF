@@ -4,3 +4,21 @@
 ul {
 	list-style-type:none;
 }
+
+.centered {
+	text-align:center;
+}
+
+.twitter_feed {
+	margin:0 auto;
+	padding:5px;
+	width:400px;
+}
+
+.twitter_feed div:nth-child(2n+1) {
+	background-color:#CCC;
+}
+
+.tweet {
+	padding:5px;
+}
