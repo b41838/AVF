@@ -2,8 +2,10 @@
 // Kyler Schroeder
 // AFV 1309
 
-$(document).on('pageinit', '#instagramFeed', function() {
-
+$('#instagramFeed').on('pageinit', function() {
+	
+	alert("Hello from the Instagram Feed!");
+	
 	// Instagram API
 	$(function() {
 		// var tag = "bhgraffiti";
@@ -34,12 +36,14 @@ $(document).on('pageinit', '#instagramFeed', function() {
 	}; // end screenOutput
 });
 
-$(document).on('pageinit', '#twitterFeed', function() {
+$('#twitterFeed').on('pageinit', function() {
     
-    $('.twitter_feed').getmytweets({
-        twitter_hashtag: 'graffiti', /* twitter hashtag.. without the # */
-        twitter_wrap: 'tweet', /* wrap each tweet with a class */
-        twitter_limit: 10 /* how many tweets to return */
-    });
+	alert("Hello from the twitter feed!");
+	
+//    $('.twitter_feed').getmytweets({
+//        twitter_hashtag: 'graffiti', /* twitter hashtag.. without the # */
+//        twitter_wrap: 'tweet', /* wrap each tweet with a class */
+//        twitter_limit: 10 /* how many tweets to return */
+//    });
     
 });
