@@ -4,10 +4,10 @@
 
 $('#instagramFeed').on('pageinit', function() {
 
-	alert("Hello from the Instagram Feed!");
-	
 	// Instagram API
 	$(function() {
+		
+		alert("hi");
 		// var tag = "bhgraffiti";
 		var tag = "graffiti";
 		var url = "https://api.instagram.com/v1/tags/" + tag + "/media/recent?callback=?&amp;client_id=9a4423b4dfdd4111a73d4bd39082f519&amp;count=12";
@@ -15,12 +15,8 @@ $('#instagramFeed').on('pageinit', function() {
 		
 	});
 	
-	// alert("getJSON");
-	
 	var screenOutput = function(info) {
-		
-		//alert("screenOutput");
-		//console.log(data);
+
 		console.log(info);
 		
 		$("#data-msg").html("<h2>Instagram Results:</h2>");
@@ -34,16 +30,15 @@ $('#instagramFeed').on('pageinit', function() {
 		$("li:nth-child(3n+2)").addClass("ui-block-b");
 		$("li:nth-child(3n+3)").addClass("ui-block-c");
 	}; // end screenOutput
+
 });
 
 $('#twitterFeed').on('pageinit', function() {
-    
-	alert("Hello from the twitter feed!");
-	
+
     $('.twitter_feed').getmytweets({
         twitter_hashtag: 'graffiti', /* twitter hashtag.. without the # */
         twitter_wrap: 'tweet', /* wrap each tweet with a class */
         twitter_limit: 10 /* how many tweets to return */
     });
-    
+
 });
