@@ -2,24 +2,26 @@
    AFV 1309 */
 
 /* iPad Landscape */
-@media only screen 
+/*@media only screen 
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) 
 and (orientation : landscape)
 and (-webkit-min-device-pixel-ratio: 2) {
 	.ui-body-c, .ui-overlay-c {
 		background-color:#000;
-}}
+	}
+}*/
 
 /* iPad Portrait */
-@media only screen 
+/*@media only screen 
 and (min-device-width : 768px) 
 and (max-device-width : 1024px) 
 and (orientation : portrait)
 and (-webkit-min-device-pixel-ratio: 2) {
 	.ui-body-c, .ui-overlay-c {
 		background-color:#CCC;
-}}
+	}
+}*/
 
 /*.ui-body-c, .ui-overlay-c {
 	background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAQUlEQVQIW12N0QkAQAhCc6L2H6MW6krokPwpUXywVrXQ2n/ueNwgM83dWURE1BotMrxTiuHsMi7/M6ekPCLurC495yhCBJAyV4gAAAAASUVORK5CYII=) repeat;
