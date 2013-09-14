@@ -2,7 +2,8 @@
 // Kyler Schroeder
 // AFV 1309
 
-$('#instagramFeed').on('pageinit', function() {
+$('#div').on('pagebeforeshow', function(){
+//$('#instagramFeed').on('pageinit', function() {
 
 	// Instagram API
 	$(function() {
@@ -11,8 +12,8 @@ $('#instagramFeed').on('pageinit', function() {
 		// var tag = "bhgraffiti";
 		var tag = "graffiti";
 		var url = "https://api.instagram.com/v1/tags/" + tag + "/media/recent?callback=?&amp;client_id=9a4423b4dfdd4111a73d4bd39082f519&amp;count=12";
-		$.getJSON(url, screenOutput);
 		
+		$.getJSON(url, screenOutput);
 	});
 	
 	var screenOutput = function(info) {

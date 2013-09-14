@@ -1,2 +1,54 @@
 /* Kyler Schroeder
    AFV 1309 */
+   
+/* iPad Landscape */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+	background-color:#000;
+}
+
+/* iPad Portrait */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait) {
+	background-color:#CCC;
+}
+
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+
+	}
+
+/* phone */
+@media (max-width: 767px) {
+	.twitter_feed {
+		width:350px;
+	}
+}
+.ui-body-c, .ui-overlay-c {
+	background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAQUlEQVQIW12N0QkAQAhCc6L2H6MW6krokPwpUXywVrXQ2n/ueNwgM83dWURE1BotMrxTiuHsMi7/M6ekPCLurC495yhCBJAyV4gAAAAASUVORK5CYII=) repeat;
+}
+
+ul {
+	list-style-type:none;
+}
+
+.centered {
+	text-align:center;
+}
+
+.twitter_feed {
+	margin:0 auto;
+	padding:5px;
+	width:400px;
+}
+
+.twitter_feed div:nth-child(2n+1) {
+	background-color:#CCC;
+}
+
+.tweet {
+	padding:5px;
+}
