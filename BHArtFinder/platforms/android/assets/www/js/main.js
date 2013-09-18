@@ -2,6 +2,16 @@
 // Kyler Schroeder
 // AFV 1309
 
+function onLoad() {
+        document.addEventListener("deviceready", onDeviceReady, false);
+}
+
+    // device APIs are available
+    
+function onDeviceReady() {
+        // Now safe to use device APIs
+}
+
 $('#instagramFeed').on('pageinit', function() {
 
 	// Instagram API

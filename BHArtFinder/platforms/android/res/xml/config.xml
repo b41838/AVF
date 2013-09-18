@@ -29,4 +29,16 @@
     <preference name="disable-cursor" value="false" />
     <preference name="android-minSdkVersion" value="7" />
     <preference name="android-installLocation" value="auto" />
+	<feature name="Notification">
+    	<param name="android-package" value="org.apache.cordova.Notification" />
+	</feature>
+    <feature name="Compass">
+        <param name="android-package" value="org.apache.cordova.CompassListener" />
+    </feature>
+    <feature name="Camera">
+        <param name="android-package" value="org.apache.cordova.CameraLauncher" />
+    </feature>
+    <feature name="Contacts">
+        <param name="android-package" value="org.apache.cordova.ContactManager" />
+    </feature>
 </widget>
