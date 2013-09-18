@@ -122,8 +122,8 @@ var contactsFunc = function() {
 	
 }
 
-var compassFunc = function() {
-/*	navigator.compass.getCurrentHeading(compassWin, compassFail);
+/*var compassFunc = function() {
+	navigator.compass.getCurrentHeading(compassWin, compassFail);
 	
 	// if success get current heading
 	function compassWin(heading) {
@@ -134,8 +134,8 @@ var compassFunc = function() {
 	// if fail, throw error
 	function compassFail(compassError) {
 		alert('Compass Error: ' + compassError.code);
-	}*/
-}
+	}
+}*/
 
 $('#instagramFeed').on('pageinit', function() {
 
