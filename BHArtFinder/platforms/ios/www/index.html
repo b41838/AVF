@@ -129,11 +129,12 @@
 
 			<section data-role="content">
                 <h2 class="centered">Camera</h2>
-                <a href="#" data-role="button" data-mini="true" onclick="capturePhoto();">Capture Photo</a> <br>
-			    <a href="#" data-role="button" data-mini="true" onclick="capturePhotoEdit();">Capture Editable Photo</a> <br>
-	    		<a href="#" data-role="button" data-mini="true" onclick="getPhoto(pictureSource.PHOTOLIBRARY);">From Photo Library</a><br>
-    			<a href="#" data-role="button" data-mini="true" onclick="getPhoto(pictureSource.SAVEDPHOTOALBUM);">From Photo Album</a><br>
-                <a href="#home" data-role="button" data-mini="true" data-icon="arrow-l" data-inline="true">Back</a>
+                <button onclick="capturePhoto();">Capture Photo</button> <br>
+                <button onclick="capturePhotoEdit();">Capture Editable Photo</button> <br>
+                <button onclick="getPhoto(pictureSource.PHOTOLIBRARY);">From Photo Library</button><br>
+                <button onclick="getPhoto(pictureSource.SAVEDPHOTOALBUM);">From Photo Album</button><br>
+                <img style="display:none;width:60px;height:60px;" id="smallImage" src="" />
+                <img style="display:none;" id="largeImage" src="" />
             </section>
             
         </section>
@@ -200,7 +201,7 @@
 
 			<section data-role="content">
                 <h2 class="centered">Compass</h2>
-                <p id="displayHeading">Calculating direction...</p>
+                 <p>getCurrentHeading</p>
             </section>
             
         </section>
@@ -320,8 +321,8 @@
 
 	    <script src="js/jquery-1.10.2.min.js"></script>
 		<script src="js/jquery.mobile-1.3.2.min.js"></script>
-		<script src="cordova.js"></script>
-		<script src="phonegap.js"></script>
+		<script type="text/javascript" src="cordova.js" charset="utf-8"></script>
+		<script type="text/javascript" src="phonegap.js" charset="utf-8"></script>
 		<script src="js/min.tweet.3.js"></script> <!-- include the GMTweets library -->
         <script src="js/main.js"></script>
     </body>

@@ -12,7 +12,7 @@
         <param name="android-package" value="org.apache.cordova.App" />
     </feature>
     <access origin="http://127.0.0.1*" />
-	<access origin="*" />
+    <access origin="*" />
     <preference name="useBrowserHistory" value="true" />
     <preference name="exit-on-suspend" value="false" />
     <preference name="permissions" value="none" />
@@ -29,9 +29,9 @@
     <preference name="disable-cursor" value="false" />
     <preference name="android-minSdkVersion" value="7" />
     <preference name="android-installLocation" value="auto" />
-	<feature name="Notification">
-    	<param name="android-package" value="org.apache.cordova.Notification" />
-	</feature>
+    <feature name="Notification">
+        <param name="android-package" value="org.apache.cordova.Notification" />
+    </feature>
     <feature name="Compass">
         <param name="android-package" value="org.apache.cordova.CompassListener" />
     </feature>
@@ -40,5 +40,20 @@
     </feature>
     <feature name="Contacts">
         <param name="android-package" value="org.apache.cordova.ContactManager" />
+    </feature>
+    <feature name="Accelerometer">
+        <param name="android-package" value="org.apache.cordova.devicemotion.AccelListener" />
+    </feature>
+    <feature name="Geolocation">
+        <param name="android-package" value="org.apache.cordova.geolocation.GeoBroker" />
+    </feature>
+    <feature name="File">
+        <param name="android-package" value="org.apache.cordova.file.FileUtils" />
+    </feature>
+    <feature name="Capture">
+        <param name="android-package" value="org.apache.cordova.mediacapture.Capture" />
+    </feature>
+    <feature name="Media">
+        <param name="android-package" value="org.apache.cordova.media.AudioHandler" />
     </feature>
 </widget>
